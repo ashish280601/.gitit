@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import axios from "axios"
 import { useNavigate, Link } from "react-router-dom"
 
@@ -49,7 +49,7 @@ function Login() {
 
             <form action="post" className="form">
                 <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" className="form-input" />
-                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" className="form-input" />
+                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" autoComplete="on" className="form-input" />
                 <button className="submit-btn" onClick={submit}>Log In</button>
                 <p>New to MyApp <Link to="/signup" className="link">Signup</Link></p>
             </form>

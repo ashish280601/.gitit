@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
-mongoose.connect("mongodb://localhost:27017/subscription_app/authentication")
+mongoose.connect("mongodb://localhost:27017/subscription_app")
 .then(()=>{
     console.log("mongodb connected");
 })
@@ -18,7 +18,7 @@ const newSchema=new mongoose.Schema({
         required:true
     },
     name:{
-        type: string,
+        type: String,
         required: true
     }
 })
