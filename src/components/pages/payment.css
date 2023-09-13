@@ -1,0 +1,101 @@
+* {
+  margin: auto;
+  background-color: rgb(16, 75, 135);
+}
+
+.payment-container {
+  width: 750px;
+  height: 300px;
+  margin-top: 11.5rem;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+/* styling the left part of an payment  */
+
+#left-side {
+  width: 50%;
+  height: 100%;
+  margin-right: 12rem;
+  float: left;
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+#card-num {
+  width: 250px;
+  margin-bottom: 5rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#card-month {
+  width: 3.6rem;
+  border-left: 0;
+  border-bottom-right-radius: 0;
+}
+
+#cvc {
+  width: 2.7rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#card-num,
+#card-month,
+#cvc {
+  height: 2rem;
+  margin-top: 1rem;
+  background-color: whitesmoke;
+  border: 1px solid rgba(118, 114, 114, 0.792);
+  outline: none;
+  border-collapse: collapse;
+}
+
+button {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 16px;
+  margin-right: 13rem;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+/* removed arrow from input number  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* styling the right part of an payment  */
+
+#right-side{
+  width: 50%;
+  height: 100%;  
+  margin-left: -12rem;
+  float: right;
+  padding: 1rem;
+  background-color: rgba(189, 186, 186, 0.744);
+}
+
+span, p{
+    background-color: rgb(204,202,202);
+}
+
+hr{
+   background-color: rgba(189, 186, 186, 0.744); 
+}
+
+span{
+    display:  flex;
+    margin-top: 30px ;
+    margin-left: 20px;
+}
+
+p{
+    margin-right: 20px;
+}
+
