@@ -1,3 +1,8 @@
+*{
+    margin: auto;
+    /* overflow: hidden; */
+}
+
 input[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -6,15 +11,14 @@ input[type=checkbox]{
 
 label {
 	cursor: pointer;
-	/* text-indent: -9999px; */
-	width: 12rem;
+	width: 14rem;
 	height: 5rem;
 	background: rgb(16,75,135);
 	display: block;
 	border-radius: 100px;
 	position: relative;
     top: 6rem;
-    left: 7rem;
+    right: 20rem;
 }
 
 label::after {

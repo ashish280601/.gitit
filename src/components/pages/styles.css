@@ -4,7 +4,6 @@
 
 .container{
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: nowrap;
     margin-left: 25%;
 }
@@ -40,7 +39,7 @@
     height: auto;
     font-size: large;
     position: absolute;
-    right: 35rem;
+    left: -24rem;
 }
 
 .sub-mobile, .sub-basic , .sub-standard, .sub-premium{
@@ -68,3 +67,10 @@ ul:hover{
     cursor: pointer;
     background-color: rgb(30, 85, 175);
 }
+
+
+
+
+
+
+

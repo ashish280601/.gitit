@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export default function Monthly({ plans, subscribes }) {
+export default function Yearly({ plans, months }) {
   return (
     <div className="container">
       <div className="nav">
@@ -10,8 +10,8 @@ export default function Monthly({ plans, subscribes }) {
               <li>{plan.option}</li>
             </ul>
           ))}
-          {subscribes.map((data, index) => (
-            <div className="sub-details hr-line" key={index}>
+          {months.map((data, index) => (
+            <div className="sub-details" key={index}>
               <span className="sub-title">{data.title}</span>
               <span className="sub-mobile">{data.mobile}</span>
               <span className="sub-basic">{data.basic}</span>
