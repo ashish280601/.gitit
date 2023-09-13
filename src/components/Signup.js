@@ -2,7 +2,7 @@ import React, {useState } from "react"
 import axios from "axios"
 import { useNavigate, Link } from "react-router-dom"
 
-import "./styles/styles.css";
+import styled from  "./styles/register.module.css";
 
 
 function Login() {
@@ -43,16 +43,16 @@ function Login() {
 
 
     return (
-        <div className="login">
+        <div className={styled.login}>
 
             <h1>Create Account</h1>
 
-            <form className="form" action="post">
-                <input type="text" onChange={(e) => { setName(e.target.value) }} placeholder="Name" className="form-input" />
-                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  className="form-input"/>
-                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" autoComplete="on" className="form-input" />
-                <button className="submit-btn" onClick={submit}>Sign Up</button>
-                <p>Already have an account?<Link to="/" className="link">Login</Link></p>
+            <form className={styled.form} action="post">
+                <input type="text" onChange={(e) => { setName(e.target.value) }} placeholder="Name" className={styled.formInput} />
+                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  className={styled.formInput}/>
+                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" autoComplete="on" className={styled.formInput} />
+                <button className={styled.submitBtn} onClick={submit}>Sign Up</button>
+                <p>Already have an account?<Link to="/" className={styled.link}>Login</Link></p>
             </form>
 
 

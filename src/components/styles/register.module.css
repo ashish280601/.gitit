@@ -10,14 +10,14 @@
     padding: 2rem;
   }
   
-  .form-input {
+  .formInput {
     width: 100%;
     padding-block: 0.5rem;
     border: 1px solid black;
     border-radius: 5px;
   }
   
-  .submit-btn {
+  .submitBtn {
     width: 100%;
     background-color: black;
     color: white;

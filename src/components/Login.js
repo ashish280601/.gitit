@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import axios from "axios"
 import { useNavigate, Link } from "react-router-dom"
 
-import "./styles/styles.css";
+import styled from "./styles/register.module.css";
 
 
 function Login() {
@@ -43,15 +43,15 @@ function Login() {
 
 
     return (
-        <div className="login">
+        <div className={styled.login}>
 
             <h1>Login</h1>
 
-            <form action="post" className="form">
-                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" className="form-input" />
-                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" autoComplete="on" className="form-input" />
+            <form action="post" className={styled.form}>
+                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" className={styled.formInput} />
+                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" autoComplete="on" className={styled.formInput} />
                 <button className="submit-btn" onClick={submit}>Log In</button>
-                <p>New to MyApp <Link to="/signup" className="link">Signup</Link></p>
+                <p>New to MyApp <Link to="/signup" className={styled.link}>Signup</Link></p>
             </form>
 
         </div>

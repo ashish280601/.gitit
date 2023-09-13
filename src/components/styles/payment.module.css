@@ -1,9 +1,9 @@
 * {
   margin: auto;
-  background-color: rgb(16, 75, 135);
+  /* background-color: rgb(16, 75, 135); */
 }
 
-.payment-container {
+.paymentContainer {
   width: 750px;
   height: 300px;
   margin-top: 11.5rem;
@@ -15,7 +15,7 @@
 
 /* styling the left part of an payment  */
 
-#left-side {
+#leftSide {
   width: 50%;
   height: 100%;
   margin-right: 12rem;
@@ -24,14 +24,14 @@
   background-color: whitesmoke;
 }
 
-#card-num {
+#cardNum {
   width: 250px;
   margin-bottom: 5rem;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-#card-month {
+#cardMonth {
   width: 3.6rem;
   border-left: 0;
   border-bottom-right-radius: 0;
@@ -43,8 +43,8 @@
   border-bottom-right-radius: 5px;
 }
 
-#card-num,
-#card-month,
+#cardNum,
+#cardMonth,
 #cvc {
   height: 2rem;
   margin-top: 1rem;
@@ -54,7 +54,7 @@
   border-collapse: collapse;
 }
 
-button {
+#btn {
   width: 10rem;
   height: 2.5rem;
   font-size: 16px;
@@ -72,7 +72,7 @@ input::-webkit-inner-spin-button {
 
 /* styling the right part of an payment  */
 
-#right-side{
+#rightSide{
   width: 50%;
   height: 100%;  
   margin-left: -12rem;

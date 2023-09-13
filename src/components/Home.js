@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Monthly from "./pages/monthly";
 import Yearly from "./pages/yearly";
-import Payment from "./pages/Payment";
-// import "./styles/home.css";
+// import Payment from "./pages/Payment";
+import "./styles/home.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const [plans] = useState([
@@ -119,18 +120,17 @@ export default function Home() {
 
   return (
     <div className="homepage">
-      {/* <h2>Choose the right plan for you</h2>
-      <input id="switch" type="checkbox" onClick={setToggle} />
+      <h2>Choose the right plan for you</h2>
+      <input id="switch" type="checkbox" onClick={setToggle}/>
       <label for="switch">
         <span className="toggle-option">Monthly</span>
         <span className="toggle-option">Yearly</span>
-      </label> */}
-      {/* {toggle ? (
+      </label> 
+      {toggle ? (
         <Yearly plans={plans} years={years} />
       ) : (
         <Monthly plans={plans} months={months} />
-      )} */}
-      <Payment />
+      )}
     </div>
   );
 }

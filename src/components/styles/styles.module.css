@@ -8,7 +8,7 @@
     margin-left: 25%;
 }
 
-.sub-option{
+.subOption{
     width: 4rem;
     height: 2.5rem;
     margin: 1rem;
@@ -18,11 +18,11 @@
     background-color: rgb(16, 75, 135);
 }
 
-.sub-option li{
+.subOption li{
     list-style: none;
 }
 
-.sub-details{
+.subDetails{
     width: auto;
     height: 2rem;
     font-weight:600;
@@ -34,7 +34,7 @@
 }
 
 
-.sub-title{
+.subTitle{
     width: 15rem;
     height: auto;
     font-size: large;
@@ -42,23 +42,23 @@
     left: -24rem;
 }
 
-.sub-mobile, .sub-basic , .sub-standard, .sub-premium{
+.subMobile, .subBasic , .subStandard, .subPremium{
     width: 4rem;
     height: auto;
 }
-.sub-mobile{
+.subMobile{
     position: absolute;
     left:2rem;
 }
-.sub-basic{
+.subBasic{
     position: absolute;
     left:10rem;
 }
-.sub-standard{
+.subStandard{
     position: absolute;
     left: 18rem;
 }
-.sub-premium{
+.subPremium{
     position: absolute;
     left: 26rem;
 }
