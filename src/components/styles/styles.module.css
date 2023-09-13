@@ -40,6 +40,7 @@
     font-size: large;
     position: absolute;
     left: -24rem;
+    background-color: whitesmoke;
 }
 
 .subMobile, .subBasic , .subStandard, .subPremium{

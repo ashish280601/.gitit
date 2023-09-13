@@ -1,8 +1,3 @@
-* {
-  margin: auto;
-  /* background-color: rgb(16, 75, 135); */
-}
-
 .paymentContainer {
   width: 750px;
   height: 300px;
@@ -21,7 +16,7 @@
   margin-right: 12rem;
   float: left;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: rgb(16,75,135);
 }
 
 #cardNum {
@@ -61,7 +56,7 @@
   margin-right: 13rem;
   border: none;
   border-radius: 5px;
-  color: whitesmoke;
+  color: rgb(16,75,135);
 }
 
 /* removed arrow from input number  */

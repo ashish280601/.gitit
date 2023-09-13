@@ -50,7 +50,7 @@ function Login() {
             <form action="post" className={styled.form}>
                 <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" className={styled.formInput} />
                 <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" autoComplete="on" className={styled.formInput} />
-                <button className="submit-btn" onClick={submit}>Log In</button>
+                <button  onClick={submit} className={styled.submitBtn}>Log In</button>
                 <p>New to MyApp <Link to="/signup" className={styled.link}>Signup</Link></p>
             </form>
 

@@ -2,11 +2,11 @@ import styled from "../styles/payment.module.css";
 
 export default function Payment() {
   return (
-    <>
+    <div>
       <div className={styled.paymentContainer}>
         <form id={styled.leftSide}>
-          <h2 style={{margin:"1rem 9.6rem 0 0", backgroundColor:"whitesmoke"}}>Complete Payment</h2>
-          <p style={{ color: "rgba(49, 48, 48, 0.459)" , marginRight:"45px", backgroundColor:"whitesmoke", fontWeight:"500",paddingBottom:"1.2rem" }}>
+          <h2 style={{margin:"1rem 9.6rem 0 0", backgroundColor:"rgb(16,75,135)"}}>Complete Payment</h2>
+          <p style={{ color: "rgba(49, 48, 48, 0.459)" , marginRight:"45px", backgroundColor:"rgb(16,75,135)", fontWeight:"500",paddingBottom:"1.2rem" }}>
             Enter your credit or debit card details below
           </p>
           <input
@@ -44,6 +44,6 @@ export default function Payment() {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 }

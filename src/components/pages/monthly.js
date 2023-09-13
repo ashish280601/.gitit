@@ -1,12 +1,13 @@
 import styled from "../styles/styles.module.css";
 
-export default function Monthly({ plans, months }) {
+export default function Monthly({ plans, months, submit }) {
+
   return (
     <div className={styled.container}>
       <div >
         <div>
           {plans.map((plan, index) => (
-            <ul className={styled.subOption} key={index}>
+            <ul className={styled.subOption} key={index} onClick={submit}> 
               <li>{plan.option}</li>
             </ul>
           ))}

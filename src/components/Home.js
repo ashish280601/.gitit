@@ -107,6 +107,12 @@ export default function Home() {
     },
   ]);
 
+  const navigate = useNavigate();
+
+  function handleSubmit(){
+    navigate('/payment');
+  }
+
   const useToggle = (initialState) => {
     const [toggleValue, setTogglevalue] = useState(initialState);
 
@@ -122,15 +128,17 @@ export default function Home() {
     <div className="homepage">
       <h2>Choose the right plan for you</h2>
       <input id="switch" type="checkbox" onClick={setToggle}/>
-      <label for="switch">
+      <label htmlFor="switch">
         <span className="toggle-option">Monthly</span>
         <span className="toggle-option">Yearly</span>
       </label> 
       {toggle ? (
-        <Yearly plans={plans} years={years} />
+        <Yearly plans={plans} years={years} submit={handleSubmit}/>
       ) : (
-        <Monthly plans={plans} months={months} />
+        <Monthly plans={plans} months={months} submit={handleSubmit}/>
       )}
+
+      
     </div>
   );
 }
