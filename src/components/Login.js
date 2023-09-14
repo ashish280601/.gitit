@@ -44,7 +44,7 @@ function Login() {
 
     return (
         <div className={styled.login}>
-
+            
             <h1>Login</h1>
 
             <form action="post" className={styled.form}>

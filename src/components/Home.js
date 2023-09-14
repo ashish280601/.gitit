@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Monthly from "./pages/monthly";
 import Yearly from "./pages/yearly";
-// import Payment from "./pages/Payment";
+import Payment from "./pages/Payment";
 import "./styles/home.css";
-import { useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const [plans] = useState([
@@ -12,6 +12,8 @@ export default function Home() {
     { option: "Standard" },
     { option: "Premium" },
   ]);
+
+  // storing month data
 
   const [months] = useState([
     {
@@ -60,6 +62,8 @@ export default function Home() {
     },
   ]);
 
+  // storing year data
+
   const [years] = useState([
     {
       title: "Monthly price",
@@ -107,11 +111,41 @@ export default function Home() {
     },
   ]);
 
+  const checkout = async () => {
+    try{
+      const res= await fetch("http://localhost:8000/checkout/checkout",{
+        method:"post",
+        header:{
+          "Content-Type": "application/json"
+        },
+        mode:"cors",
+        body:JSON.stringify({
+          items:[
+            {
+              id:1,
+              name:"Basic",
+              plan:"monthly",
+              price:100
+            },
+          ]
+        })
+      });
+      const data = await res.json()
+      window.location = data.url
+    } catch (error){
+      console.log(error);
+    }
+  }
+
+  // navigating from home page to payment page
+
   const navigate = useNavigate();
 
-  function handleSubmit(){
+  function handleSubmit(event){
     navigate('/payment');
   }
+
+  // toggling from month component to year component
 
   const useToggle = (initialState) => {
     const [toggleValue, setTogglevalue] = useState(initialState);
@@ -137,8 +171,6 @@ export default function Home() {
       ) : (
         <Monthly plans={plans} months={months} submit={handleSubmit}/>
       )}
-
-      
     </div>
   );
 }

@@ -39,29 +39,30 @@
     height: auto;
     font-size: large;
     position: absolute;
-    left: -24rem;
-    background-color: whitesmoke;
+    left: -22rem;
+    background-color: #ffffff;
 }
 
 .subMobile, .subBasic , .subStandard, .subPremium{
     width: 4rem;
     height: auto;
+    background-color: #ffffff;
 }
 .subMobile{
     position: absolute;
-    left:2rem;
+    left:1.4rem;
 }
 .subBasic{
     position: absolute;
-    left:10rem;
+    left: 9rem;
 }
 .subStandard{
     position: absolute;
-    left: 18rem;
+    left: 17rem;
 }
 .subPremium{
     position: absolute;
-    left: 26rem;
+    left: 25rem;
 }
 
 ul:hover{
