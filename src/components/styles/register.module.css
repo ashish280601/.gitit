@@ -30,9 +30,12 @@
 
   .link{
     text-decoration: none;
-    color: whitesmoke;
+    background-color: #ffff;
+    /* color: whitesmoke; */
   }
 
-  .line, p{
-    background-color: rgb(16,75,135);
+  p{
+    background-color: #ffff;
   }
+
+  
